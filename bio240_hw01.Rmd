@@ -72,18 +72,16 @@ gender_data <- read.csv('gender_stats_data.csv')
 After executing the chunk above, you should have a new variable called
 `gender_data`, of type *data frame*.
 
-If you want to get a spreadsheet view of the data, you can use the `View` function, as in the chunk below.
-
-The view will open in a new tab.  Switch back to this Notebook tab to
-continue:
+One way of getting a quick look at the data, is to use the `head` function on
+the new `gender_data` data frame, like this:
 
 ```{r}
-View(gender_data)
+head(gender_data)
 ```
 
-When you look at the `View` of the data frame, you will see that it
-has the column names that you know from the tutorial.  You can see all
-the column names with:
+This shows the first six rows of the data frame, along with the column names.
+You already know these column names from the tutorial.  You can see all the
+column names with:
 
 ```{r}
 names(gender_data)
